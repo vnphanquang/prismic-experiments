@@ -1,0 +1,98 @@
+{
+  "_cts": {
+    "news": {
+      "relatedNews": {}
+    }
+  },
+  "slices/news": {
+    "Paragraph": {
+      "default": {
+        "primary": {
+          "content": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      },
+      "withImageBefore": {
+        "primary": {
+          "image": {
+            "content": "https://images.unsplash.com/photo-1546182990-dffeafbe841d"
+          },
+          "content": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      },
+      "withImageAfter": {
+        "primary": {
+          "image": {
+            "content": "https://images.unsplash.com/photo-1470093851219-69951fcbb533"
+          }
+        }
+      }
+    },
+    "Text": {
+      "default": {
+        "primary": {
+          "content": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "Media": {
+      "default": {
+        "primary": {
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "media": {
+            "content": "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f"
+          }
+        }
+      },
+      "video": {
+        "primary": {}
+      },
+      "embedded": {
+        "primary": {
+          "media": {
+            "content": {
+              "url": "https://www.youtube.com/watch?v=860d8usGC0o",
+              "oembed": {
+                "title": "Have Single-Page Apps Ruined the Web? | Transitional Apps with Rich Harris, NYTimes",
+                "author_name": "Jamstack TV",
+                "author_url": "https://www.youtube.com/c/JAMstackConf",
+                "type": "video",
+                "height": 113,
+                "width": 200,
+                "version": "1.0",
+                "provider_name": "YouTube",
+                "provider_url": "https://www.youtube.com/",
+                "thumbnail_height": 360,
+                "thumbnail_width": 480,
+                "thumbnail_url": "https://i.ytimg.com/vi/860d8usGC0o/hqdefault.jpg",
+                "html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/860d8usGC0o?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen title=\"Have Single-Page Apps Ruined the Web? | Transitional Apps with Rich Harris, NYTimes\"></iframe>"
+              }
+            }
+          }
+        }
+      },
+      "anotherNews": {
+        "primary": {}
+      }
+    }
+  }
+}

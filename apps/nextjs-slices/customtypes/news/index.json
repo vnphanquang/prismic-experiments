@@ -1,0 +1,71 @@
+{
+  "id": "news",
+  "label": "News",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "uid",
+          "placeholder": ""
+        }
+      },
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "News title goes here"
+        }
+      },
+      "thumbnail": {
+        "type": "Image",
+        "config": {
+          "label": "Thumbnail",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "publishedAt": {
+        "type": "Date",
+        "config": {
+          "label": "Publication Date",
+          "placeholder": ""
+        }
+      },
+      "relatedNews": {
+        "type": "Group",
+        "config": {
+          "label": "Related News",
+          "fields": {
+            "news": {
+              "type": "Link",
+              "config": {
+                "label": "news",
+                "select": "document",
+                "customtypes": [
+                  "news"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "media": {
+              "type": "SharedSlice"
+            },
+            "paragraph": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

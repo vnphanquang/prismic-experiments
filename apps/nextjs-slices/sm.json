@@ -2,6 +2,9 @@
   "apiEndpoint": "https://prismic-exps.prismic.io/api/v2",
   "localSliceSimulatorURL": "http://localhost:3000/slice-simulator",
   "libraries": [
-    "@/slices"
-  ]
+    "@/slices",
+    "@/slices/news"
+  ],
+  "_latest": "0.3.0",
+  "framework": "previousNext"
 }
